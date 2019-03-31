@@ -1,0 +1,5 @@
+import sys
+print("I love coding")
+print ("My name is janvi",sys.argv[0])
+print("I am pursuing b.tech from ggsipu.",str(sys.argv[0]))
+print("Number of arguments",len(sys.argv))
