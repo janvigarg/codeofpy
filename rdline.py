@@ -1,0 +1,8 @@
+fp = open('pycharm.txt','r')
+print(fp.read())
+print(fp.readline())
+print(fp.readlines())
+sp = open('pyvenv.cfg','r')
+print(sp.readline())
+jg = open('janviii', 'r')
+print(jg.read())
