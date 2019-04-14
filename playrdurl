@@ -1,0 +1,8 @@
+import webbrowser
+import re
+import sys
+print ("play",sys.argv[0])
+file = 'janviii'
+with open(file) as file:
+    for cnt, url in enumerate(file):
+        webbrowser.open_new_tab(url)
