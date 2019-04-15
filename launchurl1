@@ -1,0 +1,64 @@
+import sys,random,webbrowser,time
+from datetime import datetime
+
+def GetUrls(UrlList):
+    urls=[]
+    try:
+        with open(UrlList.txt,'r') as filereader:
+            line=filereader.readline()
+            while(line):
+                urls.append(line)
+                line=filereader.readline()
+    except Exception as e:
+        print(str(e))
+        return[]
+
+    else:
+        return Urls
+
+def selectrandomUrls(urls):
+    random_number= random.randrange(0,5,1)
+    url=urls(random_number)
+    return url
+
+def waitfortimer(launchtime):
+    current_time = datetime.now().strftime('%H:&M')
+    while(launchtimenotincurrenttime):
+        time.sleep(1)
+        current_time = datetime.now().strftime('%H:&M')
+def launchurl(url):
+    print(f'launching Url{URl}')
+    webbrowser.open_new_tab(url)
+
+
+if __name__ == "__main__":
+
+    if len(sys.argv)<3:
+        print('Required arguments not passed')
+        print('Argument1 : url file')
+        print('Argument2 : Time in HH:MM format')
+        exit()
+    url_file = sys.argv[1]
+    urls = GetUrls(UrlList)
+
+    if not len(urls)>0:
+         print('No URL found')
+         exit()
+
+
+    url=selectrandomurl(urls)
+
+    launchtime=sys.argv[2]
+    waitfortimer(launchtime)
+
+    launchurl(url)
+
+
+
+
+
+
+
+
+
+
